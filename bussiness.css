@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-color: #0b4870;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.outer {
+    background-color: #eff7ff;
+    padding: 30px;
+}
+
+@media (orientation:landscape),
+(min-width:768px) {
+    .bg-container {
+        padding: 40px;
+    }
+}
+
+.parent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (orientation:landscape),
+(min-width:768px) {
+    .parent1 {
+        flex-direction: row;
+    }
+}
+
+.description-container {
+    text-align: center;
+    width: 400px;
+}
+
+.description-container1 {
+    text-align: center;
+    min-width: 40%;
+    width: 400px;
+}
+
+.image1 {
+    padding-top: 10px;
+    width: 120px;
+}
+
+@media (orientation:landscape),
+(min-width:768px) {
+    .image1 {
+        width: 150px;
+    }
+
+    .description-container1 {
+        order: -1;
+    }
+}
+
+.heading {
+    color: #f0f0f0;
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.description {
+    color: #f4f3f3;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+@media (orientation:landscape),
+(min-width:768px) {
+    .heading {
+        font-size: 36px;
+    }
+}
+
+hr {
+    color: #f0f0f0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
